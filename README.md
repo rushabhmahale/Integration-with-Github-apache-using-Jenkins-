@@ -51,7 +51,11 @@ In this, I have Integrate Github with Jenkins and Hosted my webpage also I can d
     * Username:-`ec2-user`
     * Enter :- `enter Your pem file key open pem file you have downloaded copy and paste the key`
     * Host key Verify:- `non verifying verification Strategy`
- - All the Config has done now your jenkins is connected to Webserver 
- - 
+ - All the Configuration has been done. Now your jenkins is connected to Webserver 
+ - Go to jenkins create Job name test1 and select free style project 
+ - in restrict where this project can be run under that option select label experession</br>
+   write slave1
+ - Go to build execute shell write `sudo mkdir /root/test1` 
+ - now go to job and build now run the job you will see that you have successfully deployed your job   
  
   
