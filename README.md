@@ -21,6 +21,7 @@ In this, I have Integrate Github with Jenkins and Hosted my webpage also I can d
     * `sudo yum upgrade`
     * `sudo yum install java-11-openjdk-devel`
     * `sudo yum install --nobest jenkins`
+    * `sudo yum install git -y`
     * `sudo systemctl start jenkins`
     * `sudo systemctl status jenkins`
     * `sudo systemctl enable jenkins`</b>
