@@ -57,6 +57,35 @@ In this, I have Integrate Github with Jenkins and Hosted my webpage also I can d
  - in restrict where this project can be run under that option select label experession</br>
    write slave1
  - Go to build execute shell write `sudo mkdir /root/test1` 
- - now go to job and build now run the job you will see that you have successfully deployed your job   
+ - now go to job and build now run the job you will see that you have successfully deployed your job  
+ 
+ ## Step to connect Github with Jenkins:- 
+ - Go to github Create repository with any name than select public and a readmefile 
+ - Go to local system open gitbash go to working directory 
+ - `git clone https://github.com/rushabhmahale/xyzfilename`
+ - `cd workspace`
+ - `git remote -v`
+ - `nano index.html` <b>(write your content in this file)</b>
+ - `git add .`
+ - `git commit -m "commit from my local system"` 
+ - `git log --oneline`
+ - `git status`
+ - `git push`
+ - now go to your github repository and go to settings there is the option <b>Webhooks</b> add <b>webhook</b>
+ - payload url :- </b>copy jenkins url eg:- http://150.20.7.14:8080/github-webhook/ (in last write /github-webhook/)
+ - select send everything 
+ - add webhook go to webhook redilievery you are successfully connected to jenkins 
+ - Now go to jenkins Create job with any name 
+ - Select freestyle project 
+ - go to scm copy git repo url paste here 
+ - Restrict where this project can be run under that label expression Type <b>slave1</b>
+ - Build execute `sudo cp -f * /var/www/html` all the github content will be added in your webserver instance in the folder /var/www/html using jenkins 
+ - Build triggers select option  github hook trigger at git scm polling 
+ - and save now  
+ - Build now 
+
+ _**Now you will see real time change in your webpage if not refesh browser**_  
+ 
+ 
  
   
