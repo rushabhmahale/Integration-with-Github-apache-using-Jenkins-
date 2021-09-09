@@ -63,7 +63,7 @@ In this, I have Integrate Github with Jenkins and Hosted my webpage also I can d
  ## <b>Configuration link:-</b> https://drive.google.com/file/d/1kWmJj4k6_sOuRtoRnMS2xEOwZLVSbVLW/view?usp=sharing
  
  ## Step to connect Github with Jenkins:- 
- - Go to github Create repository with any name than select public and a readmefile 
+ - Go to github Create repository with any name then select public and a readmefile 
  - Go to local system open gitbash go to working directory 
  - `git clone https://github.com/rushabhmahale/xyzfilename`
  - `cd workspace`
